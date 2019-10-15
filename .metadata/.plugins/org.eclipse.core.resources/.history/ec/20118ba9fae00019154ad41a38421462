@@ -1,0 +1,10 @@
+package com.green;
+
+public class Install {
+
+	
+	public void install()
+	{
+		
+	}
+}

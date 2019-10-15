@@ -1,0 +1,23 @@
+package com.crm.qa.base;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginSevice {
+
+	
+	@FindBy(name="email")
+	WebElement email;
+	
+	
+	@FindBy(name="password")
+	WebElement password;
+	
+	@FindBy(xpath="//input[@type='submit']")
+	WebElement loginbtn;
+	
+	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
+	WebElement signupbtn;
+	
+	
+}

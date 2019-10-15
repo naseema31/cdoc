@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1568040016516_1" label="junit-test-beginners-example" name="junit-test-beginners-example">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/junit-test-beginners-example" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569660691920_2" label="AppiumFramework" name="AppiumFramework">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AppiumFramework" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1566295682490_0" label="Window Working Set" name="Aggregate for window 1566295682490"/>
+</workingSetManager>

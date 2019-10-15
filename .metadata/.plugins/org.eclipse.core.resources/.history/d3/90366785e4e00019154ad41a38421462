@@ -1,0 +1,26 @@
+package com.green;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class TC002_POST_Request {
+
+	@Test
+	public void doctor_registration()
+	{
+    	RestAssured.baseURI="http://staging-644472902.ap-south-1.elb.amazonaws.com/ws/v1/register";
+
+	RequestSpecification httpRequest=RestAssured.given();;
+	JSONObject requestParams=new JSONObject();
+	
+	String responseBody=response.getBody().asString();
+	System.out.println("Response Body is:"+responseBody);
+	}
+	
+	
+}

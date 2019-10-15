@@ -1,0 +1,45 @@
+package com.green;
+
+import org.json.simple.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+import static io.restassured.RestAssured.*;
+
+public class TC004_GET_Docdetails {
+
+	@Test
+	public void GET_Docdetails()
+	{
+		
+		
+		//Response resp=get("https://samples.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml&appid=b6907d289e10d714a6e88b30761fae22");
+		int code=get("http://staging-644472902.ap-south-1.elb.amazonaws.com/ws/v1/doctor/2c9f87136d5dcb0f016d6bdbf6700058").getStatusCode();
+	System.out.println("status code is "+ code);
+	Assert.assertEquals(code, 200);
+	}
+	
+	
+	
+	@Test
+	public void Login()
+	{
+		
+		
+		//Response resp=get("https://samples.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml&appid=b6907d289e10d714a6e88b30761fae22");
+		
+		RequestSpecification httpRequest=RestAssured.given();;
+		JSONObject requestParams=new JSONObject();
+		requestParams.put("mobileNumber", "9740127800");
+		int code=post("http://staging-644472902.ap-south-1.elb.amazonaws.com/ws/v1/login/").getStatusCode();
+		httpRequest.header("Content-Type","application/JSON");
+		httpRequest.body(requestParams.toJSONString());
+		
+	    System.out.println("status code is "+ code);
+	     Assert.assertEquals(code, 200);
+	}
+	
+}
